@@ -6,8 +6,9 @@ import * as faceapi from 'face-api.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-await faceapi.nets.ssdMobilenetv1.loadFromUri('/weights')
-await faceapi.nets.faceExpressionNet.loadFromUri('/weights')
+await faceapi.nets.ssdMobilenetv1.loadFromUri('/weights');
+// await faceapi.nets.faceRecognitionNet.loadFromUri('/weights');
+// await faceapi.nets.faceLandmark68Net.loadFromUri('/weights');
 
 root.render(
   <React.StrictMode>
